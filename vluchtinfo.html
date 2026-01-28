@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <title>SpaceTrip App – Vluchtinfo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="vluchtinfo">
+  <div class="wrapper">
+    <!-- zelfde header/vernav als index.html -->
+    <!-- copy/paste header en pas niets aan behalve title & data-page -->
+    <header>
+      <div class="header-top">
+        <div>
+          <h1>SpaceTrip App</h1>
+          <div class="header-sub">Commerciële ruimtevlucht – Mission to Mars</div>
+        </div>
+        <div class="badge">Touchscreen</div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html" data-page="home">Home</a></li>
+          <li><a href="vluchtinfo.html" data-page="vluchtinfo">Vluchtinfo</a></li>
+          <li><a href="schip.html" data-page="schip">Ruimteschip</a></li>
+          <li><a href="menu.html" data-page="menu">Menu</a></li>
+          <li><a href="wellness.html" data-page="wellness">Wellness & Fitness</a></li>
+          <li><a href="holodeck.html" data-page="holodeck">VR Holodeck</a></li>
+          <li><a href="camera.html" data-page="camera">Camera's</a></li>
+          <li><a href="media.html" data-page="media">Films & Series</a></li>
+          <li><a href="muziek-eboeken.html" data-page="muziek-eboeken">Muziek & E-books</a></li>
+          <li><a href="games.html" data-page="games">Games & Quiz</a></li>
+          <li><a href="team.html" data-page="team">Team</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-header">
+        <h2>Vluchtinformatie</h2>
+        <p>Actuele status van je reis naar Mars.</p>
+      </section>
+
+      <section class="info-grid">
+        <article class="card">
+          <h3>Resterende reistijd</h3>
+          <p id="flight-time-left">--:--:--</p>
+        </article>
+        <article class="card">
+          <h3>Snelheid</h3>
+          <p id="flight-speed">28.000 km/u</p>
+        </article>
+        <article class="card">
+          <h3>Routepositie</h3>
+          <p id="flight-location">Tussen Aarde en Mars</p>
+        </article>
+        <article class="card">
+          <h3>Aankomsttijd (geschat)</h3>
+          <p>10-12-2025 18:45</p>
+        </article>
+      </section>
+
+      <section class="card">
+        <h3>Vluchtupdate</h3>
+        <p>Simuleer een nieuwe update van de boordcomputer.</p>
+        <button class="btn" id="flight-refresh">Update vluchtstatus</button>
+      </section>
+    </main>
+
+    <footer>
+      <span>&copy; <span id="footer-year"></span> SpaceTrip App</span>
+      <span>Deck 3 – Entertainment Hub</span>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

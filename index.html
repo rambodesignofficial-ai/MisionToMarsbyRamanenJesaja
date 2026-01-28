@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <title>SpaceTrip App – Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="home">
+  <div class="wrapper">
+    <header>
+      <div class="header-top">
+        <div>
+          <h1>SpaceTrip App</h1>
+          <div class="header-sub">Commerciële ruimtevlucht – Mission to Mars</div>
+        </div>
+        <div class="badge">Touchscreen</div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html" data-page="home">Home</a></li>
+          <li><a href="vluchtinfo.html" data-page="vluchtinfo">Vluchtinfo</a></li>
+          <li><a href="schip.html" data-page="schip">Ruimteschip</a></li>
+          <li><a href="menu.html" data-page="menu">Menu</a></li>
+          <li><a href="wellness.html" data-page="wellness">Wellness & Fitness</a></li>
+          <li><a href="holodeck.html" data-page="holodeck">VR Holodeck</a></li>
+          <li><a href="camera.html" data-page="camera">Camera's</a></li>
+          <li><a href="media.html" data-page="media">Films & Series</a></li>
+          <li><a href="muziek-eboeken.html" data-page="muziek-eboeken">Muziek & E-books</a></li>
+          <li><a href="games.html" data-page="games">Games & Quiz</a></li>
+          <li><a href="team.html" data-page="team">Team</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-header">
+        <h2 id="home-greeting">Welkom aan boord</h2>
+        <p>Bediening van jouw persoonlijke in-flight entertainment systeem.</p>
+      </section>
+
+      <section class="card-grid">
+        <article class="card">
+          <h3>Huidige tijd</h3>
+          <p id="home-clock">--:--:--</p>
+          <div class="progress-track">
+            <div class="progress-fill" id="home-progress"></div>
+          </div>
+          <p style="margin-top:0.3rem;font-size:0.8rem;color:var(--muted);">
+            Simulatie van vluchtvoortgang naar Mars.
+          </p>
+        </article>
+
+        <a class="card card-link" href="vluchtinfo.html">
+          <h3>Vluchtinformatie</h3>
+          <p>Bekijk locatie, snelheid en aankomsttijd.</p>
+        </a>
+
+        <a class="card card-link" href="media.html">
+          <h3>Films & Series</h3>
+          <p>Kies iets om te kijken tijdens de reis.</p>
+        </a>
+
+        <a class="card card-link" href="games.html">
+          <h3>Games & Quiz</h3>
+          <p>Speel een game en test je kennis.</p>
+        </a>
+      </section>
+    </main>
+
+    <footer>
+      <span>&copy; <span id="footer-year"></span> SpaceTrip App</span>
+      <span>Deck 3 – Entertainment Hub</span>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

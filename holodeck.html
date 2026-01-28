@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <title>SpaceTrip App – VR Holodeck</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="holodeck">
+  <div class="wrapper">
+    <header>
+      <div class="header-top">
+        <div>
+          <h1>SpaceTrip App</h1>
+          <div class="header-sub">Commerciële ruimtevlucht – Mission to Mars</div>
+        </div>
+        <div class="badge">Touchscreen</div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html" data-page="home">Home</a></li>
+          <li><a href="vluchtinfo.html" data-page="vluchtinfo">Vluchtinfo</a></li>
+          <li><a href="schip.html" data-page="schip">Ruimteschip</a></li>
+          <li><a href="menu.html" data-page="menu">Menu</a></li>
+          <li><a href="wellness.html" data-page="wellness">Wellness & Fitness</a></li>
+          <li><a href="holodeck.html" data-page="holodeck">VR Holodeck</a></li>
+          <li><a href="camera.html" data-page="camera">Camera's</a></li>
+          <li><a href="media.html" data-page="media">Films & Series</a></li>
+          <li><a href="muziek-eboeken.html" data-page="muziek-eboeken">Muziek & E-books</a></li>
+          <li><a href="games.html" data-page="games">Games & Quiz</a></li>
+          <li><a href="team.html" data-page="team">Team</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-header">
+        <h2>VR Holodeck</h2>
+        <p>Kies een virtuele ervaring voor tijdens de reis.</p>
+      </section>
+
+      <section class="card-grid">
+        <article class="card" data-scenario="Mars Surface Walk">
+          <h3>Mars Surface Walk</h3>
+          <p>Wandel over de rode planeet met een virtuele gids.</p>
+        </article>
+        <article class="card" data-scenario="Deep Space Relax">
+          <h3>Deep Space Relax</h3>
+          <p>Rustgevende vlucht langs sterrenvelden en nevels.</p>
+        </article>
+        <article class="card" data-scenario="Earth From Orbit">
+          <h3>Earth From Orbit</h3>
+          <p>Bekijk de aarde van bovenaf alsof je in een ruimtepak zweeft.</p>
+        </article>
+      </section>
+
+      <section class="card" style="margin-top:0.9rem;">
+        <h3>Gekozen scenario</h3>
+        <p id="holodeck-detail">
+          Tik op een ervaring om het scenario te starten.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <span>&copy; <span id="footer-year"></span> SpaceTrip App</span>
+      <span>Deck 3 – Entertainment Hub</span>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

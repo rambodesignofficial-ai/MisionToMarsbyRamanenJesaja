@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <title>SpaceTrip App – Games & Quiz</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="games">
+  <div class="wrapper">
+    <!-- header copy -->
+    <header>
+      <div class="header-top">
+        <div>
+          <h1>SpaceTrip App</h1>
+          <div class="header-sub">Commerciële ruimtevlucht – Mission to Mars</div>
+        </div>
+        <div class="badge">Touchscreen</div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html" data-page="home">Home</a></li>
+          <li><a href="vluchtinfo.html" data-page="vluchtinfo">Vluchtinfo</a></li>
+          <li><a href="schip.html" data-page="schip">Ruimteschip</a></li>
+          <li><a href="menu.html" data-page="menu">Menu</a></li>
+          <li><a href="wellness.html" data-page="wellness">Wellness & Fitness</a></li>
+          <li><a href="holodeck.html" data-page="holodeck">VR Holodeck</a></li>
+          <li><a href="camera.html" data-page="camera">Camera's</a></li>
+          <li><a href="media.html" data-page="media">Films & Series</a></li>
+          <li><a href="muziek-eboeken.html" data-page="muziek-eboeken">Muziek & E-books</a></li>
+          <li><a href="games.html" data-page="games">Games & Quiz</a></li>
+          <li><a href="team.html" data-page="team">Team</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-header">
+        <h2>Games & Quiz</h2>
+        <p>Test je ruimtereis-kennis.</p>
+      </section>
+
+      <section class="card">
+        <h3>Mini Mars-quiz</h3>
+        <p>Klik op start om de vragen te laden.</p>
+        <button class="btn" id="quiz-start">Start quiz</button>
+        <div id="quiz" style="margin-top:0.8rem;"></div>
+        <p id="quiz-result" class="quiz-result"></p>
+      </section>
+
+      <section class="card" style="margin-top:1rem;">
+        <div class="card-head">
+          <div>
+            <h3>Asteroid Dodge</h3>
+            <p class="muted">Swipe/drag om te sturen. Overleef zo lang mogelijk en pak sterren voor bonuspunten.</p>
+          </div>
+          <div class="pill" id="ad-status">Klaar om te starten</div>
+        </div>
+
+        <div class="arcade">
+          <canvas id="arcade" width="900" height="500" aria-label="Asteroid Dodge game"></canvas>
+
+          <div class="arcade-ui">
+            <div class="stat">
+              <span class="label">Score</span>
+              <span class="value" id="ad-score">0</span>
+            </div>
+            <div class="stat">
+              <span class="label">Best</span>
+              <span class="value" id="ad-best">0</span>
+            </div>
+            <div class="stat">
+              <span class="label">Lives</span>
+              <span class="value" id="ad-lives">3</span>
+            </div>
+            <div class="stat">
+              <span class="label">Level</span>
+              <span class="value" id="ad-level">1</span>
+            </div>
+          </div>
+
+          <div class="arcade-controls" aria-label="Game controls">
+            <button class="btn btn-ghost" id="ad-left" type="button">◀</button>
+            <button class="btn" id="ad-start" type="button">Start</button>
+            <button class="btn btn-ghost" id="ad-right" type="button">▶</button>
+          </div>
+
+          <p class="hint">
+            Tip: op touchscreen kun je ook gewoon <b>op het canvas slepen</b>.
+            Op laptop: gebruik <b>←</b> en <b>→</b>.
+          </p>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <span>&copy; <span id="footer-year"></span> SpaceTrip App</span>
+      <span>Deck 3 – Entertainment Hub</span>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

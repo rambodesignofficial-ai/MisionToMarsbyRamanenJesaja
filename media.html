@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <title>SpaceTrip App – Media</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="media">
+  <div class="wrapper">
+    <!-- zelfde header als boven -->
+    <!-- ... (kopie header) ... -->
+
+    <header> <!-- copy dezelfde header hier zoals bij index -->
+      <!-- ... -->
+    </header>
+
+    <main>
+      <section class="page-header">
+        <h2>Films & Series</h2>
+        <p>Kies iets om te kijken tijdens de reis.</p>
+      </section>
+
+      <div class="toolbar">
+        <label for="media-filter">Genre:</label>
+        <select id="media-filter">
+          <option value="all">Alles</option>
+          <option value="scifi">Sciencefiction</option>
+          <option value="drama">Drama</option>
+          <option value="kids">Kids</option>
+          <option value="docu">Documentaire</option>
+        </select>
+      </div>
+
+      <section id="media-list" class="card-grid">
+        <!-- wordt door JS gevuld -->
+      </section>
+    </main>
+
+    <footer>
+      <span>&copy; <span id="footer-year"></span> SpaceTrip App</span>
+      <span>Deck 3 – Entertainment Hub</span>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
